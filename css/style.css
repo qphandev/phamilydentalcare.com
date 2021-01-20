@@ -1,0 +1,269 @@
+p {
+  font-size: 1.3rem;
+}
+
+.nav-logo img {
+  width: 3.5rem;
+}
+.nav-logo a {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #00BBE0;
+}
+
+/* ============== HERO SECTION */
+.hero {
+  background-image: url("/img/chairs.jpg");
+  /* The image used */
+  background-color: #cccccc;
+  /* Used if the image is unavailable */
+  height: 500px;
+  /* You must set a specified height */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* Do not repeat the image */
+  background-size: cover;
+  /* Resize the background image to cover the entire container */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-text-container {
+  width: 50%;
+  margin: auto;
+  z-index: 30;
+}
+.hero-text-container:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 187, 224, 0.6);
+  z-index: 2;
+}
+.hero-office-name {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 11;
+  color: white;
+}
+.hero-office-name-text {
+  margin: 1rem;
+}
+.hero-office-name-text h1 {
+  font-size: 1rem;
+  font-weight: bolder;
+  margin: 0.5rem 0;
+}
+.hero-office-name-text h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+.hero-office-name-text address {
+  margin: 2rem 0 0 0;
+}
+
+/* ============== ABOUT SECTION */
+.about {
+  display: flex;
+  padding: 4rem;
+}
+.about-image-container {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+}
+.about-text-container {
+  width: 60%;
+  margin: 0 3rem;
+}
+.about-text-container h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+.about-text-container p {
+  margin: 0;
+}
+@media only screen and (max-width: 992px) {
+  .about {
+    flex-direction: column;
+  }
+  .about-image-container {
+    width: 100%;
+  }
+  .about-text-container {
+    width: 100%;
+    padding: 2rem;
+  }
+  .about-text-container h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  .about-text-container p {
+    font-size: 1.5rem;
+  }
+}
+
+/* ============== SERVICES SECTION */
+.services {
+  display: flex;
+  background-color: #F0F0F0;
+}
+.services-image-container {
+  width: 100%;
+  position: relative;
+}
+.services-image-container h2 {
+  position: absolute;
+  z-index: 10;
+  color: white;
+  font-size: 3em;
+  top: 30%;
+  left: 35%;
+  padding-bottom: 1rem;
+  border-bottom: 0.5rem solid #00BBE0;
+  width: 3rem;
+}
+.services-image-bg {
+  background-image: url("/img/smile.jpg");
+  background-color: #cccccc;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.services-image-bg:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+.services-text-container {
+  background-color: #F0F0F0;
+  padding: 1rem 3rem;
+}
+.services-text-container ul {
+  width: 40rem;
+  margin: 4rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+.services-text-container li:before {
+  content: "";
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  background-image: url("/img/plus.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 2em;
+}
+@media only screen and (max-width: 992px) {
+  .services {
+    flex-direction: column;
+    align-items: center;
+    background: white;
+  }
+  .services-image-container {
+    width: 100vw;
+  }
+  .services-image-container img {
+    width: 100vw;
+  }
+  .services-image-container h2 {
+    top: 0;
+    width: auto;
+  }
+  .services-text-container {
+    width: 90%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 7px 10px #c0c0c0;
+    position: relative;
+    bottom: 17rem;
+    z-index: 12;
+  }
+}
+
+/* ============== TESTIMONIALS SECTION */
+.testimonials {
+  padding: 4rem;
+}
+.testimonials-title-container h2 {
+  font-weight: lighter;
+  font-style: italic;
+}
+.testimonials-boxes-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 992px) {
+  .testimonials-boxes-container {
+    flex-wrap: wrap;
+  }
+}
+.testimonials-box {
+  width: 30rem;
+  padding: 1.5rem;
+  background-color: #F0F0F0;
+  box-shadow: 0px 7px 10px #c0c0c0;
+  margin: 2rem auto;
+}
+.testimonials-box-client-name {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+/* ============== TEAMS SECTION */
+.team {
+  padding: 4rem;
+  background-color: #F0F0F0;
+}
+.team-boxes-container {
+  display: flex;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 992px) {
+  .team-boxes-container {
+    flex-wrap: wrap;
+  }
+}
+.team-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+}
+.team-box-picture-container img {
+  width: 25rem;
+}
+.team-box-bio-container h3 {
+  font-size: 2rem;
+}
