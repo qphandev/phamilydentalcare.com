@@ -2,6 +2,11 @@ p {
   font-size: 1.3rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .nav-logo img {
   width: 3.5rem;
 }
@@ -207,6 +212,9 @@ nav {
     bottom: 17rem;
     z-index: 12;
   }
+  .services-text-container ul {
+    width: 100%;
+  }
 }
 
 /* ============== TESTIMONIALS SECTION */
@@ -245,6 +253,16 @@ nav {
   padding: 4rem;
   background-color: #F0F0F0;
 }
+.team-title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.team-title-container h2 {
+  border-bottom: 1px solid #00BBE0;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+}
 .team-boxes-container {
   display: flex;
   justify-content: space-around;
@@ -266,4 +284,39 @@ nav {
 }
 .team-box-bio-container h3 {
   font-size: 2rem;
+}
+
+/* ============== FAQs SECTION */
+.faqs {
+  padding: 4rem;
+}
+.faqs-title-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.faqs-title-container h2 {
+  border-bottom: 1px solid #00BBE0;
+  padding-bottom: 2rem;
+  font-weight: lighter;
+}
+
+/* ============== FOOTER SECTION */
+.footer {
+  background-color: #00BBE0;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.footer-item p {
+  margin: 0;
+}
+.footer-item a {
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  .footer {
+    flex-direction: column;
+  }
 }

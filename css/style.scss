@@ -10,6 +10,10 @@ $light-gray: #F0F0F0;
 p {
     font-size: 1.3rem;
 }
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 // NAVBAR
 .nav-logo {
@@ -224,7 +228,12 @@ nav {
             position: relative;
             bottom: 17rem;
             z-index: 12;
+            ul {
+                width: 100%;
+            }
         }
+
+        
     }
 }
 
@@ -264,6 +273,17 @@ nav {
     padding: 4rem;
     background-color: $light-gray;
 
+    &-title-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        h2 {
+            border-bottom: 1px solid $primary-color;
+            padding-bottom: 2rem;
+            font-weight: lighter;
+        }
+    }
+
     &-boxes-container {
         display: flex;
         justify-content: space-around;
@@ -288,5 +308,42 @@ nav {
         h3 {
             font-size: 2rem;
         }
+    }
+}
+
+/* ============== FAQs SECTION */
+.faqs {
+    padding: 4rem;
+
+    &-title-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        h2 {
+            border-bottom: 1px solid $primary-color;
+            padding-bottom: 2rem;
+            font-weight: lighter;
+        }
+    }
+}
+
+/* ============== FOOTER SECTION */
+.footer {
+    background-color: $primary-color;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    &-item {
+        p {
+            margin: 0;
+        }
+        a {
+            color: white;
+        }
+    }
+
+    @include mQ(992px) {
+        flex-direction: column;
     }
 }
