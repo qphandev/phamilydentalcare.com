@@ -1,6 +1,10 @@
 $primary-color: #00BBE0;
 $light-gray: #F0F0F0;
 
+html {
+    scroll-behavior: smooth;
+}
+
 @mixin mQ ($screenSize) {
     @media only screen and (max-width: $screenSize) {
         @content;
@@ -13,6 +17,20 @@ p {
 h3 {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+// Tabs
+.tab a.active {
+    color: $primary-color!important;
+}
+.tab a {
+    color: black!important;
+}
+.tabs .indicator {
+    background-color:$primary-color;
+} 
+.tab a:focus.active {
+    background-color: transparent!important;
 }
 
 // NAVBAR
@@ -32,6 +50,10 @@ nav {
     display: flex;
     justify-content: center;
     background-color: $primary-color;
+
+    @include mQ(992px) {
+        justify-content: flex-start;
+    }
 }
 
 /* ============== HERO SECTION */
@@ -99,6 +121,10 @@ nav {
         display: flex;
         justify-content: center;
         
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
     }
 
     &-text-container {
@@ -140,7 +166,7 @@ nav {
     display: flex;
     background-color: $light-gray;
     &-image-container {
-        width: 100%;
+        width: 40%;
         position: relative;
         h2 {
             position: absolute;
@@ -177,20 +203,18 @@ nav {
         }
     }
 
-    &-text-container {
-        background-color: $light-gray;
-        padding: 1rem 3rem;
-
-        ul {
-            width: 40rem;
-            margin: 4rem 0;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1em;
-
-            font-size: 1.3rem;
-            font-style: italic;
-        }
+    &-plus-list-container {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        // ul {
+        //     height: 50%;
+        //     margin: 4rem 0;
+        //     display: flex;
+        //     font-size: 1.3rem;
+        //     font-style: italic;
+        // }
 
         li:before { 
             content:''; 
@@ -202,6 +226,12 @@ nav {
             background-repeat:no-repeat; 
             padding-left: 2em; 
         }
+    }
+
+    &-text-container {
+        background-color: $light-gray;
+        padding: 1rem 3rem 0 3rem;
+        width: 100%;
     }
 
     @include mQ(992px) {
@@ -296,11 +326,11 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 25rem;
+        width: 20rem;
     }
     &-box-picture-container {
         img {
-            width: 25rem;
+            width: 20rem;
         }
         
     }
@@ -333,7 +363,7 @@ nav {
     color: white;
     display: flex;
     justify-content: space-around;
-    padding: 1rem;
+    padding: 4rem;
     &-item {
         p {
             margin: 0;
@@ -345,5 +375,13 @@ nav {
 
     @include mQ(992px) {
         flex-direction: column;
+    }
+
+    &-bottom {
+        padding: 1rem;
+
+        a {
+            color: white;
+        }
     }
 }

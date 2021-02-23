@@ -21,19 +21,19 @@
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li class="nav-logo"><a href="#!"><img src="img/logo-white.svg" alt="Business logo"></a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-                <li><a href="location.html">LOCATION</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#team">TEAM</a></li>
+                <li><a href="#faqs">FAQ</a></li>
             </ul>
         </div>
     </nav>
     
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="about.html">ABOUT</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="contact.html">CONTACT</a></li>
-        <li><a href="location.html">LOCATION</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#team">TEAM</a></li>
+        <li><a href="#location">LOCATION</a></li>
     </ul>
 
     <!-- HERO -->
@@ -59,11 +59,21 @@
     <!-- ABOUT -->
     <section id="about" class="about">
         <div class="about-image-container">
-            <img src="https://via.placeholder.com/600x400" alt="">
+            <img src="/img/BryanPhamNguyenCropped.JPG" alt="Dr. Bryan PhamNguyen">
         </div>
         <div class="about-text-container">
             <h1>BRYAN Q. PHAMNGUYEN, D.D.S., P.A.</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aperiam autem placeat rerum earum tenetur repudiandae cum culpa libero. Itaque fuga porro corrupti earum quam modi odio ut inventore reprehenderit!</p>
+            <p>Education History:</p>
+            <ul>
+                <li>Chemical Engineering Undergraduate Degree at The University of Oklahoma</li>
+                <li>Doctorate of Dental Surgery at Baylor College of Dentistry (Known now as Texas A&M College of Dentistry)</li>
+                <li>Over 1,000 hours in Continuing Education Courses</li>
+            </ul>
+            <p>Dr. Bryan Quang Phamnguyen has been improving smiles since 1991. He received his Doctorate of Dental Surgery (DDS) degree from the prestigious Baylor College of Dentistry (Known now as Texas A&M College of Dentistry). He and his family moved and are based in The Greater Orlando area. He has owned his own private family practice in Central Florida for over 25 years.</p>
+            <br>
+            <p>Dr. Bryan’s main focus has always been to improve dental health for his patients by providing superior dental care with years of experience and knowledge. With a kind heart, he ensures his patients are well taken care of, he is committed to excellent and superior dentistry.</p>
+            <br>
+            <p>Dr. Bryan has worked vigorously for 30+ years to ensure his practice remains convenient, comforting, quality-oriented, and affordable as possible to ensure that his patients can enjoy the quality of dental care they desire!</p>
         </div>
     </section>
 
@@ -74,18 +84,84 @@
             <h2>Our Services</h2>
         </div>
         <div class="services-text-container">
-           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis eius incidunt praesentium numquam? Et nulla repudiandae, odio delectus tempore quos praesentium itaque recusandae, vitae incidunt beatae! Porro eos quia eius.</p>
-
-            <ul>
-                <li>Service Item</li>
-                <li>Service Item</li>
-                <li>Service Item</li>
-                <li>Service Item</li>
-                <li>Service Item</li>
-                <li>Service Item</li>
+            <ul class="tabs tabs-fixed-width tab-demo z-depth-1">
+                <li class="tab"><a class="active" href="#tab1">General</a></li>
+                <li class="tab"><a href="#tab2">Restorative</a></li>
+                <li class="tab"><a href="#tab3">Cosmetic</a></li>
+                <li class="tab"><a href="#tab4">Other</a></li>
             </ul>
+            <!-- General -->
+            <div id="tab1" class="col s12">
+                <p> 
+                    General and Preventative Dentistry: Designed to ensure optimal oral care. Our goal is to help prevent future dental problems.
+                </p>
+                <ul class="services-plus-list-container"> 
+                    <li>Comprehensive, Limited, and Periodic Exams</li>
+                    <li>Routine Prophylaxis (Teeth Cleanings)</li>
+                    <li>Digital X-rays</li>
+                    <li>CBCT Scans</li>
+                    <li>Advanced Gum Surgery</li>
+                    <li>Oral Cancer Screening</li>
+                    <li>Fillings and Sealants</li>
+                    <li>Fluoride Treatments</li>
+                    <li>Scaling and Root Planning (Deep Cleanings)</li>
+                    <li>Pediatric Dentistry</li>
+                </ul>
+            </div>
+
+            <!-- Restorative -->
+            <div id="tab2" class="col s12">
+                <p> 
+                    Restorative Dental Care to restore the function and health of the original tooth structure.
+                </p>
+                <ul class="services-plus-list-container"> 
+                    <li>Tooth Colored Composite Fillings</li>
+                    <li>Crowns</li>
+                    <li>Ceramic Inlays and Onlays</li>
+                    <li>Gold Crown Restorations</li>
+                    <li>Bridges</li>
+                    <li>Implant Restorations (Implant, Abutment, and Implant Crowns)</li>
+                    <li>Complete and Partial Dentures</li>
+                    <li>Root Canals</li>
+                    <li>Extractions (Simple and Difficult)</li>
+                    <li>Periodontal and Gum Disease</li>
+                    <li>Other Minor Surgical Dental Procedures</li>
+                </ul>
+            </div>
+
+            <!-- Cosmetic -->
+            <div id="tab3" class="col s12">
+                <p> 
+                    Cosmetic Dentistry to renovate your smile and look incredibly natural and radiant.
+                </p>
+                <ul class="services-plus-list-container"> 
+                    <li>Smile Makeovers</li>
+                    <li>Basic and Challenging Orthodontal Cases</li>
+                    <li>Invisalign Orthodontic Solutions</li>
+                    <li>Six Month Smiles Provider</li>
+                    <li>Zoom! Teeth Whitening</li>
+                    <li>Take Home Whitening</li>
+                    <li>All Porcelain Crowns</li>
+                    <li>Porcelain Veneers</li>
+                    <li>Ceramic Inlays and Onlays</li>
+                    <li>Gum Recontouring</li>
+                </ul>
+            </div>
+
+            <!-- Others -->
+            <div id="tab4" class="col s12">
+                <p>
+                    As part of our commitment to quality and you, our patients, we constantly work to bring you the best care available. Offering other dental services including:
+                </p>
+                <ul class="services-plus-list-container">
+                    <li>Prompt Emergency Exams and Visits</li>
+                    <li>Mouth/Night Guards for Grinding and Athletics</li>
+                    <li>Philip Sonicare Electric Toothbrushes</li>
+                </ul>
+            </div>
         </div>
     </section>
+
     <!-- TESTIMONIALS -->
     <section id="testimonials" class="testimonials">
         <div class="testimonials-title-container">
@@ -114,10 +190,11 @@
             </div>
         </div>
     </section>
+
     <!-- TEAM -->
     <section id="team" class="team">
         <div class="team-title-container">
-            <h2>Meet the Team</h2>
+            <h2>Meet the Doctors</h2>
         </div>
         <div class="team-boxes-container">
 
@@ -128,73 +205,57 @@
                 </div>
                 <div class="team-box-bio-container">
                     <h3>Dr. Alvin Nguyen, DMD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt unde voluptas perferendis voluptatem.</p>
-                    <p>Aliquid facere repellat consectetur odit? Porro commodi exercitationem odio unde dicta temporibus voluptate quia ut quae quidem.</p>
+                    <p>Education:</p>
+                    <ul>
+                        <li>Doctor Dental Medicine, Roseman University of Health Sciences</li>
+                        <li>Over 200 hours of Continuing Education Courses</li>
+                    </ul>
+                    <p>Dr. Alvin Nguyen was raised in California. He graduated from Roseman University of Health Sciences, the first dental school in Utah. Dr. Nguyen is bilingual in Vietnamese. Dr. Nguyen is excited to join Dr. Bryan Phamnguyen and his excellent team to provide patients with the best care.</p>
+                    <br>
+                    <p>Dr. Nguyen enjoys exploring the outdoors with his girlfriend. His favorite activities include snowboarding, snorkeling, food-tasting, and cooking. One of his favorite recipes is pineapple steaks.</p>
                 </div>
             </div>
-
-            <!-- Person 2 -->
-            <div class="team-box">
-                <div class="team-box-picture-container">
-                    <img src="img/Pilarte.jpeg" alt="Dr. Graciela Pilarte, DMD">
-                </div>
-                <div class="team-box-bio-container">
-                    <h3>Dr. Graciela Pilarte, DMD</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt unde voluptas perferendis voluptatem.</p>
-                    <p>Aliquid facere repellat consectetur odit? Porro commodi exercitationem odio unde dicta temporibus voluptate quia ut quae quidem.</p>
-                </div>
-            </div>
+            
         </div>
 
     </section>
     <!-- FAQS -->
-    <section id="faqs" class="faqs">
-        <div class="faqs-title-container">
-            <h2>FAQs</h2>
-        </div>
-        <div class="collapsible-container">
-            <ul class="collapsible">
-                <li>
-                <div class="collapsible-header">Question 1</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                </li>
-                <li>
-                <div class="collapsible-header">Question 2</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                </li>
-                <li>
-                <div class="collapsible-header">Question 3</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-                </li>
-            </ul>
-        </div>
+    <section id="location" class="location">
+        
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer-item">
-            <h3 class="footer-item-header">Location</h3>
-            <p>1325 N Goldenrod Rd</p>
-            <p>Orlando, FL 32807</p> 
+    <footer>
+
+        <div class="footer">
+            <div class="footer-item">
+                <h3 class="footer-item-header">Location</h3>
+                <p>1325 N Goldenrod Rd</p>
+                <p>Orlando, FL 32807</p> 
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-header">Hours</h3>
+                <p>Mon - Thu : 8AM - 5PM</p> 
+                <p>Fri : 8AM - 4PM</p>
+                <p>Sat & Sun : Closed</p>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-header">Contact</h3>
+                <p>For questions and appointments, call:</p>
+                <p>(407) 381-1200</p>
+            </div>
+            <div class="footer-item">
+                <h3 class="footer-item-header">Forms</h3>
+                <ul>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-item">
-            <h3 class="footer-item-header">Hours</h3>
-            <p>Mon - Thu : 8AM - 5PM</p> 
-            <p>Fri : 8AM - 4PM</p>
-            <p>Sat & Sun : Closed</p>
-        </div>
-        <div class="footer-item">
-            <h3 class="footer-item-header">Contact</h3>
-            <p>For questions and appointments, call:</p>
-            <p>(407) 381-1200</p>
-        </div>
-        <div class="footer-item">
-            <h3 class="footer-item-header">Forms</h3>
-            <ul>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
+
+        <div class="footer p-2 footer-bottom">
+            <a href="#">Terms and Conditions</a>
         </div>
     </footer>
     

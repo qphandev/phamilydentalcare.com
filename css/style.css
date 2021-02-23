@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-size: 1.3rem;
 }
@@ -5,6 +9,22 @@ p {
 h3 {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.tab a.active {
+  color: #00BBE0 !important;
+}
+
+.tab a {
+  color: black !important;
+}
+
+.tabs .indicator {
+  background-color: #00BBE0;
+}
+
+.tab a:focus.active {
+  background-color: transparent !important;
 }
 
 .nav-logo img {
@@ -21,6 +41,11 @@ nav {
   display: flex;
   justify-content: center;
   background-color: #00BBE0;
+}
+@media only screen and (max-width: 992px) {
+  nav {
+    justify-content: flex-start;
+  }
 }
 
 /* ============== HERO SECTION */
@@ -92,6 +117,10 @@ nav {
   display: flex;
   justify-content: center;
 }
+.about-image-container img {
+  width: 100%;
+  object-fit: cover;
+}
 .about-text-container {
   width: 60%;
   margin: 0 3rem;
@@ -130,7 +159,7 @@ nav {
   background-color: #F0F0F0;
 }
 .services-image-container {
-  width: 100%;
+  width: 40%;
   position: relative;
 }
 .services-image-container h2 {
@@ -165,20 +194,12 @@ nav {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 2;
 }
-.services-text-container {
-  background-color: #F0F0F0;
-  padding: 1rem 3rem;
+.services-plus-list-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
-.services-text-container ul {
-  width: 40rem;
-  margin: 4rem 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1em;
-  font-size: 1.3rem;
-  font-style: italic;
-}
-.services-text-container li:before {
+.services-plus-list-container li:before {
   content: "";
   display: inline-block;
   height: 1em;
@@ -187,6 +208,11 @@ nav {
   background-size: contain;
   background-repeat: no-repeat;
   padding-left: 2em;
+}
+.services-text-container {
+  background-color: #F0F0F0;
+  padding: 1rem 3rem 0 3rem;
+  width: 100%;
 }
 @media only screen and (max-width: 992px) {
   .services {
@@ -277,10 +303,10 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25rem;
+  width: 20rem;
 }
 .team-box-picture-container img {
-  width: 25rem;
+  width: 20rem;
 }
 .team-box-bio-container h3 {
   font-size: 2rem;
@@ -307,7 +333,7 @@ nav {
   color: white;
   display: flex;
   justify-content: space-around;
-  padding: 1rem;
+  padding: 4rem;
 }
 .footer-item p {
   margin: 0;
@@ -319,4 +345,10 @@ nav {
   .footer {
     flex-direction: column;
   }
+}
+.footer-bottom {
+  padding: 1rem;
+}
+.footer-bottom a {
+  color: white;
 }
