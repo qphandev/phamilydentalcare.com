@@ -352,3 +352,10 @@ nav {
 .footer-bottom a {
   color: white;
 }
+
+.covid-alert {
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 0.2rem 0;
+}
